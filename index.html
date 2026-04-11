@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <!-- Organiza o conteúdo para nós com Materialize (container) -->
+    <!-- Class container utiliza 70% da página somente (margem de 15% cada lado)-->
+    <div class="container">
+
+        <!-- Títulos (h1, h2, h3) -->
+         <!-- Fonte alterada com Materialize automaticamente -->
+        <h1>Hello World!</h1>
+        <h2>Hello World!</h2>
+        <h3>Hello World!</h3>
+    </div>
+
+    <!-- 12 colunas em 1 linha -->
+    <div class="container">
+        <div class="row">
+            <div class="col s1">1</div>
+            <div class="col s1">2</div>
+            <div class="col s1">3</div>
+            <div class="col s1">4</div>
+            <div class="col s1">5</div>
+            <div class="col s1">6</div>
+            <div class="col s1">7</div>
+            <div class="col s1">8</div>
+            <div class="col s1">9</div>
+            <div class="col s1">10</div>
+            <div class="col s1">11</div>
+            <div class="col s1">12</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Uma coluna inteira (col s12) em uma linha com fundo azul -->
+            <div class="col s12" style="background-color: blue;">Meu primeiro div</div>
+            
+            <!-- Duas colunas (col s6) em uma linha -->
+            <div class="col s6" style="background-color: red;">Metade</div>
+            <div class="col s6" style="background-color: green;">Outra metade</div>
+        
+            <!-- Utilizando offset -->
+            <!-- col s2 é o tamanho da coluna (2) e offset-s10 é o tamanho do espaço (10) -->
+            <div class="col s2 offset-s10" style="background-color: red;">Metade aqui!</div>
+        </div>
+    </div>
+
+    <!-- Section e Divider -->
+     <!-- class são case sensitive (precisa ser tudo minúsculo) -->
+     <div class="container">
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Seção 1</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ipsam, delectus incidunt dolorem culpa minus, enim magnam dolor nobis quasi hic odit a molestias expedita, 
+                commodi accusantium ad nisi harum.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Seção 2</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ipsam, delectus incidunt dolorem culpa minus, enim magnam dolor nobis quasi hic odit a molestias expedita, 
+                commodi accusantium ad nisi harum.</p>
+        </div>
+     </div>
+</body>
+</html>
