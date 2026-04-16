@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Precisa carregar o jQuery primeiro... -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Componente com largura total do container + sombra (z-depth) -->
+    <div class="container">
+        <div class="col s12">
+            <p class="z-depth-3 cyan">aa</p>
+        </div>
+    </div>
+
+    <!-- Tabela automaticamente padronizada com design Materialize -->
+    <div class="container">
+
+        <!-- Class "striped" no table: diferencia linhas pares de ímpares -->
+        <!-- Class "highlight" no table: destaca linha que o mouse passar por cima -->
+        <!-- Class "responsive-table" no table: em telas menores, deixa barra de rolagem (para largura) para melhor visualização -->
+        <table class="highlight responsive-table">
+
+            <!-- Uma linha -->
+            <tr>
+                <!-- Várias colunas dentro da linha -->
+                <th>#</th>
+                <th>Nome</th>
+                <th>Nasc</th>
+            </tr>
+
+            <!-- 2ª linha -->
+            <tr>
+                <!-- Várias colunas dentro da 2ª linha -->
+                <td>1</td>
+                <td>Joao</td>
+                <td>01/01/2010</td>
+            </tr>
+
+            <!-- 3ª linha -->
+            <tr>
+                <!-- Várias colunas dentro da 3ª linha -->
+                <td>2</td>
+                <td>Maria</td>
+                <td>01/01/2010</td>
+            </tr>
+        </table>
+
+        <br>
+        
+        <!-- COM BOTÃO -->
+        <!-- "scale-out" serve para apagar o item -->
+        <!-- em conjunto com o toggleClass, ele coloca ou tira o "scale-out" do script ao apertar o botão -->
+        <button class="btn-floating scale-transition scale-out" id="meu_botao">
+
+            <!-- Para adicionar o ícone padronizado "add" da biblioteca Materialize -->
+            <i class="material-icons">add</i>
+        </button>
+
+        <!-- botão "Abrir" no lado direito da página -->
+        <a href="#" id="abrir" class="btn right">Abrir</a>
+
+        <!-- Ao clicar no botão id #abrir, será colocado (se ele não tiver) ou retirado a palavra 'scale-out' da Class -->
+        <!-- Irá aparecer e desaparecer o botão add (+) da tela conforme clicar no botão "abrir" -->
+        <script>
+            $('#abrir').click(function () {
+                $('#meu_botao').toggleClass('scale-out');
+            });
+        </script>
+
+        <br>
+
+        <!-- COM DIV (e texto) -->
+        <!-- Desta vez, o texto estará visível primeiramente. Só depois de clicar no botão, irá desaparecer e segue adiante. -->
+        <div class="scale-transition blue" id="meu_div">
+            <h1>teste</h1>
+        </div>
+
+        <!-- botão "Abrir" no lado direito da página -->
+        <a href="#" id="abrir_texto" class="btn right">Abrir</a>
+
+        <!-- Ao clicar no botão id #abrir, será colocado (se ele não tiver) ou retirado a palavra 'scale-out' da Class -->
+        <!-- Irá aparecer e desaparecer a div #meu_div (com texto) da tela conforme clicar no botão "abrir" -->
+        <script>
+            $('#abrir_texto').click(function () {
+                $('#meu_div').toggleClass('scale-out');
+            });
+        </script>
+    </div>
+</body>
+</html>
