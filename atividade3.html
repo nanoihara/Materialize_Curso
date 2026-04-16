@@ -29,5 +29,122 @@
     c) Inclua um badge verde com sua idade atual ao lado do seu nome.
     d) Envie os prints com os resultados. -->
     
+    <!-- Cabeçalho com foto e meu nome completo -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Lana Akemi Ihara</a>
+
+            <!-- Badge tela computador -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Notificações<span class="new badge blue" data-badge-caption="novos">5</span></a></li>
+                <li><a href="#">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+
+        <!-- Bage telas menores -->
+        <ul class="hide-on-large-only" style="display: flex; gap: 10px; justify-content: center;">
+            <li id="sobre"><a href="#">Sobre</a></li>
+            <li><a href="#">Notificações<span class="new badge blue" data-badge-caption="novos">5</span></a></li>
+            <li><a href="#">Vídeos</a></li>
+        </ul>
+
+        <!-- Img em telas grandes -->
+        <!--<img src="img/lana ihara - profile picture.png" alt="" class="circle responsive-img hide-on-med-and-down" style="height: auto; width: 30%; margin-top: 5px; margin-left: -20%;">-->
+    
+        <div class="col s12 m8 offset-m2 hide" id="contato">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s5 m4 l4">
+                        <img src="img/lana ihara - profile picture.png" alt="" class="circle responsive-img">
+                    </div>
+                        <div class="col s10" style="padding-left: 5%;">
+                            <span class="black-text">
+                                <h5>Contato</h5>
+                                <p>Telefone: (18) 99781-2004</p>
+                                <p>E-mail: akemiihara1234@gmail.com</p>
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#sobre').click(function () {
+            $('#contato').toggleClass('hide');
+        });
+    </script>
+
+    <div class="container">
+            <!-- Experiência com os locais de trabalho -->
+        <div class="divider"></div>
+        <div class="section row center-align">
+            <h5>Experiência</h5>
+            <div class="col s12 m6 l6">
+                <h6>Auxiliar Administrativo de Saúde</h6>
+                <p>Unidade Básica de Saúde, Birigui - SP</p>
+            </div>
+
+            <div class="col s12 m6 l6">
+                <h6>Agente de Organização Escolar</h6>
+                <p>PEI Drº José Maria dos Reis, Coroados - SP</p>
+            </div>
+
+            <div class="col s12 m6 l6">
+                <h6>Auxiliar de Vida Escolar</h6>
+                <p>CEI Enriqueta Terrence, Birigui - SP</p>
+            </div>
+            
+            <div class="col s12 m6 l6">
+                <h6>Vendedora</h6>
+                <p>Belo Broche Brechó, Birigui - SP</p>
+            </div>
+        </div>
+
+        <!-- Qualificação (Cursos já realizados) -->
+        <div class="divider"></div>
+        <div class="section row center-align">
+            
+            <h5>Qualificação</h5>
+
+            <div class="col s12 m3 l3">
+                <h6>Bacharel em Ciência da Computação</h6>
+                <p>Universidade Anhembi Morumbi</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Suporte em TI</h6>
+                <p>Plataforma Coursera</p>
+                <p>Curso ofertado pela Google</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Análise de Dados</h6>
+                <p>Plataforma Coursera</p>
+                <p>Curso ofertado pela Google</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Técnico em Informática Integrado ao Ensino Médio</h6>
+                <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus Birigui</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="section center-align">
+            <h5>Vídeo no Youtube (Um pouco sobre o que gosto)</h5>
+
+            <br>
+
+            <!-- Vídeo no youtube (sempre colocar o /embed/) -->
+            <div class="video-container">
+                <iframe src="https://youtube.com/embed/gwzqJ2NuxZ4?si=iEWff0r12NUbJ943" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
