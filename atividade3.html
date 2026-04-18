@@ -32,7 +32,7 @@
     <!-- Cabeçalho com foto e meu nome completo -->
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Lana Akemi Ihara</a>
+            <a href="#" class="brand-logo" id="sobre">Lana Akemi Ihara<span class="new badge hide-on-med-and-down" data-badge-caption=" anos">21</span></a>
 
             <!-- Badge tela computador -->
             <ul class="right hide-on-med-and-down">
@@ -47,7 +47,8 @@
 
         <!-- Bage telas menores -->
         <ul class="hide-on-large-only" style="display: flex; gap: 10px; justify-content: center;">
-            <li id="sobre"><a href="#">Sobre</a></li>
+            <li><a href="#">Idade<span class="new badge" data-badge-caption=" anos">21</span></a></li>
+            <li><a href="#">Sobre</a></li>
             <li><a href="#">Notificações<span class="new badge blue" data-badge-caption="novos">5</span></a></li>
             <li><a href="#">Vídeos</a></li>
         </ul>
@@ -55,7 +56,7 @@
         <!-- Img em telas grandes -->
         <!--<img src="img/lana ihara - profile picture.png" alt="" class="circle responsive-img hide-on-med-and-down" style="height: auto; width: 30%; margin-top: 5px; margin-left: -20%;">-->
     
-        <div class="col s12 m8 offset-m2 hide" id="contato">
+        <div class="col s12 m8 offset-m2" id="contato">
             <div class="card-panel grey lighten-5 z-depth-1">
                 <div class="row valign-wrapper">
                     <div class="col s5 m4 l4">
@@ -63,7 +64,7 @@
                     </div>
                         <div class="col s10" style="padding-left: 5%;">
                             <span class="black-text">
-                                <h5>Contato</h5>
+                                <h5>Contato <a href="#" class="btn-floating pulse btn-large blue"><i class="material-icons">email</i></a></h5>
                                 <p>Telefone: (18) 99781-2004</p>
                                 <p>E-mail: akemiihara1234@gmail.com</p>
                             </span>
@@ -75,7 +76,7 @@
 
     <script>
         $('#sobre').click(function () {
-            $('#contato').toggleClass('hide');
+            $('#contato').toggleClass('hide-on-large-only');
         });
     </script>
 
@@ -144,6 +145,50 @@
             <div class="video-container">
                 <iframe src="https://youtube.com/embed/gwzqJ2NuxZ4?si=iEWff0r12NUbJ943" frameborder="0"></iframe>
             </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="section center-align">
+
+            <h5>Idiomas</h5>
+
+            <br>
+
+            <!-- Tabela -->
+            <table class="highlight responsive-table">
+
+                <!-- 1ª linha -->
+                <tr>
+                    <!-- Colunas de título -->
+                    <th>Nome</th>
+                    <th>Conhecimento</th>
+                    <th>Descrição</th>
+                </tr>
+
+                <!-- 2ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Inglês</td>
+                    <td>Intermediário</td>
+                    <td>Pronuncia bem e tem um vasto vocabulário da linguagem</td>
+                </tr>
+
+                <!-- 3ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Espanhol</td>
+                    <td>Básico</td>
+                    <td>Realizou o curso de nível básico de espanhol durante o ensino médio</td>
+                </tr>
+
+                <!-- 4ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Japonês</td>
+                    <td>Deseja aprender</td>
+                    <td>Não tem conhecimento da língua, mas irá empenhar futuramente para aprender</td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
