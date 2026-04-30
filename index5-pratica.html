@@ -170,5 +170,43 @@
             $('.tabs').tabs();
         });
     </script>
+
+    <!-- Testando o collection -->
+    <div class="container">
+
+        <!-- with-header é para acrescentar um cabeçalho -->
+        <ul class="collection with-header">
+
+            <!-- O cabeçalho se diferencia dos demais como título -->
+            <li class="collection-header">Cabeçalho</li>
+
+            <li class="collection-item">item1</li>
+
+            <!-- classe active deixa um item em destaque -->
+            <li class="collection-item active">item2</li>
+
+            
+            <li class="collection-item">
+                item3
+
+                <!-- secondary-content é o conteúdo secundário adicionado no li -->
+                <i class="material-icons secondary-content">build</i>
+            </li>
+
+            <!-- Testando avatar -->
+            <li class="collection-item avatar">
+
+                <!-- Imagem do avatar arredondado -->
+                <img src="http://pudim.com.br/pudim.jpg" alt="" class="circle">
+                
+                <!-- Nome / título do avatar -->
+                <span class="title">Nome</span>
+
+                <!-- Conteúdo / descrição -->
+                <p>conteúdo</p>
+                <i class="material-icons secondary-content">star</i>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
