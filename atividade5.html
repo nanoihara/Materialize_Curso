@@ -19,7 +19,259 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
     <!-- ATIVIDADE 05: Adicione um card e um collection ao seu currículo;
     Envie um print do resultado. -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" id="sobre">Lana Akemi Ihara<span class="new badge hide-on-med-and-down" data-badge-caption=" anos">21</span></a>
+
+            <!-- Badge tela computador -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Notificações<span class="new badge blue" data-badge-caption="novos">5</span></a></li>
+                <li><a href="#">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+
+        <!-- Bage telas menores -->
+        <ul class="hide-on-large-only" style="display: flex; gap: 10px; justify-content: center;">
+            <li><a href="#">Idade<span class="new badge" data-badge-caption=" anos">21</span></a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Notificações<span class="new badge blue" data-badge-caption="novos">5</span></a></li>
+            <li><a href="#">Vídeos</a></li>
+        </ul>
+    </div>
+    
+    <!-- SOBRE MIM -->
+    <!-- Card horizontal -->
+    <div class="row" style="width: 80%;">
+        <div class="col s12">
+            <div class="card horizontal amber lighten-4">
+
+                <!-- Imagem no card (Profile picture) -->
+                <div class="card-image">
+                    <img src="img/lana ihara - profile picture.png" alt="">
+                </div>
+
+                <!-- Título e descrição do card -->
+                <div class="card-stacked">
+
+                    <!-- Conteúdo do texto -->
+                    <div class="card-content">
+
+                        <!-- Título -->
+                        <div class="card-title"><h3>Sobre Mim</h3></div>
+
+                        <!-- Descrição -->
+                        <p>Profissional com aproximadamente 3 anos de experiência em atendimento ao público nas áreas de comércio, educação e saúde, atuando com acolhimento, orientação ao público e rotinas administrativas. Possui boa comunicação, organização e compromisso com a qualidade no atendimento.</p>
+                    </div>
+
+                    <!-- CONTATO -->
+                    <div class="card-action">
+
+                        <!-- Telefone -->
+                        <a href="#" class="btn-floating pulse btn-small blue"><i class="material-icons">phone</i></a>
+                        (18) 99781-2004
+
+                        <br><br>
+
+                        <!-- E-mail -->
+                        <a href="#" class="btn-floating pulse btn-small blue"><i class="material-icons">email</i></a>
+                        akemiihara1234@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIÊNCIA -->
+    <div class="row" style="width: 80%;">
+        <div class="col s12">
+
+            <!-- Card -->
+            <div class="card teal lighten-5">
+
+                <!-- Conteúdo: Título e descrição -->
+                <div class="card-content">
+
+                    <div class="card-title center"><h3>Experiência</h3></div>
+                    <p>Histórico das experiências profissionais, com foco nas atividades realizadas e competências desenvolvidas.</p>
+                </div>
+
+                <!-- TÓPICOS em card-tabs (títulos) -->
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#trab1">Aux. Adm. Saúde</a></li>
+                        <li class="tab"><a href="#trab2">Aux. Vida Escolar</a></li>
+                        <li class="tab"><a href="#trab3">Agente de Organização Escolar</a></li>
+                        <li class="tab"><a href="#trab4">Vendedora</a></li>
+                    </ul>
+                </div>
+
+                <!-- DESCRIÇÃO em card-content dos títulos acima -->
+                <div class="card-content">
+
+                    <!-- Aux. Adm. Saúde -->
+                    <div id="trab1">
+                        <h5>Unidade Básica de Saúde 05 - Santo Antônio</h5>
+                        <h6>Birigui - São Paulo</h6>
+                        <h6>06/2025 até o momento</h6>
+                        <br>
+                        <p>Atendimento ao público e orientação sobre os serviços do Sistema Único de Saúde (SUS), incluindo realização de cadastros, agendamentos de consultas, organização de informações e execução de procedimentos administrativos em sistema informatizado da unidade.</p>
+                    </div>
+
+                    <!-- Aux. Vida Escolar -->
+                    <div id="trab2">
+                        <h5>CEI Enriqueta Terence</h5>
+                        <h6>Birigui - São Paulo</h6>
+                        <h6>02/2025 até 06/2025</h6>
+                        <br>
+                        <p>Apoio pedagógico e recreativo nas atividades de aprendizagem e socialização, com suporte nos cuidados essenciais como alimentação, higiene e segurança, além de estímulo ao desenvolvimento motor, cognitivo e social em um ambiente acolhedor.</p>
+                    </div>
+
+                    <!-- Agente de Organização Escolar -->
+                    <div id="trab3">
+                        <h5>E. E. Drº José Maria dos Reis</h5>
+                        <h6>Coroados - São Paulo</h6>
+                        <h6>05/2024 até 02/2025</h6>
+                        <br>
+                        <p>Atendimento a pais e responsáveis na secretaria escolar, com orientação ao público e realização de processos administrativos como transferências, históricos escolares e demais demandas acadêmicas.</p>
+                    </div>
+
+                    <!-- Vendedora -->
+                    <div id="trab4">
+                        <h5>Brechó Belo Broche</h5>
+                        <h6>Birigui - São Paulo</h6>
+                        <h6>01/2023 até 05/2024</h6>
+                        <br>
+                        <p>Atendimento a clientes presencial e on-line, oferecendo produtos e auxiliando nas vendas. Organização de peças, produção de postagens para redes sociais e responsabilidade pelo caixa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+
+        // Sobre EXPERIÊNCIA
+        // Troca ao clicar em um tab (de acordo com o título selecionado)
+        $(function () {
+            $('.tabs').tabs();
+        });
+    </script>
+
+    <script>
+        $('#sobre').click(function () {
+            $('#contato').toggleClass('hide-on-large-only');
+        });
+    </script>
+
+    <div class="container">
+
+        <!-- QUALIFICAÇÃO (Cursos já realizados) -->
+        <div class="divider"></div>
+        <div class="section row center-align">
+            
+            <h5>Qualificação</h5>
+
+            <div class="col s12 m3 l3">
+                <h6>Bacharel em Ciência da Computação</h6>
+                <p>Universidade Anhembi Morumbi</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Suporte em TI</h6>
+                <p>Plataforma Coursera</p>
+                <p>Curso ofertado pela Google</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Análise de Dados</h6>
+                <p>Plataforma Coursera</p>
+                <p>Curso ofertado pela Google</p>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <h6>Técnico em Informática Integrado ao Ensino Médio</h6>
+                <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus Birigui</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- VÍDEO NO YOUTUBE -->
+    <div class="container">
+        <div class="divider"></div>
+        <div class="section center-align">
+            <h5>Vídeo no Youtube (Um pouco sobre o que gosto)</h5>
+
+            <br>
+
+            <!-- Vídeo no youtube (sempre colocar o /embed/) -->
+            <div class="video-container">
+                <iframe src="https://youtube.com/embed/gwzqJ2NuxZ4?si=iEWff0r12NUbJ943" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="section center-align">
+
+            <h5>Idiomas</h5>
+
+            <br>
+
+            <!-- Tabela -->
+            <table class="highlight responsive-table">
+
+                <!-- 1ª linha -->
+                <tr>
+                    <!-- Colunas de título -->
+                    <th>Nome</th>
+                    <th>Conhecimento</th>
+                    <th>Descrição</th>
+                </tr>
+
+                <!-- 2ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Inglês</td>
+                    <td>Intermediário</td>
+                    <td>Pronuncia bem e tem um vasto vocabulário da linguagem</td>
+                </tr>
+
+                <!-- 3ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Espanhol</td>
+                    <td>Básico</td>
+                    <td>Realizou o curso de nível básico de espanhol durante o ensino médio</td>
+                </tr>
+
+                <!-- 4ª linha -->
+                <tr>
+                    <!-- elementos  -->
+                    <td>Japonês</td>
+                    <td>Deseja aprender</td>
+                    <td>Não tem conhecimento da língua, mas irá empenhar futuramente para aprender</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- PONTOS FORTES (com collection) -->
+        <ul class="collection with-header">
+
+            <!-- Cabeçalho (título) -->
+            <li class="collection-header"><h5>Pontos fortes?</h5></li>
+
+            <!-- Itens -->
+            <li class="collection-item">Organizada</li>
+            <li class="collection-item active">Determinada</li>
+            <li class="collection-item">Responsável</li>
+        </ul>
+    </div>
 </body>
 </html>
