@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Precisa carregar o jQuery primeiro... -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Utilizando COLLAPSIBLE -->
+    <!-- O "Collapsible" é equivalente ao "Accordion" do Bootstrap -->
+    <div class="container">
+        
+        <!-- Se colocar "Popout", faz como se, ao clicar, desse um "pulo" no collapsible-body (é uma melhora do design do collapsible) -->
+        <!-- É uma lista e a cada item é acrescentado um li -->
+        <ul class="collapsible popout">
+
+            <!-- Primeiro -->
+            <li>
+
+                <!-- Este é o Header (o que irá aparecer como TÍTULO - encurtando) -->
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>Primeiro
+                </div>
+                
+                <!-- Este é o Body (o conteúdo do texto que, ao clicar no collapsible-header, irá aparecer) -->
+                <!-- SÓ FUNCIONA SE TIVER O SCRIPT -->
+                
+                <!-- Se comporta como o "Accordion" do Bootstrap -->
+                <!-- Se um (collapsible-header) for selecionado, os outros são recolhidos -->
+                <div class="collapsible-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam dolore magnam sunt saepe. Expedita iste dolore optio aliquam sint modi adipisci quaerat, exercitationem sapiente et, reiciendis, similique illo perspiciatis?
+                </div>
+
+            </li>
+
+            <!-- Segundo -->
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">build</i>Segundo
+                </div>
+
+                <div class="collapsible-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam dolore magnam sunt saepe. Expedita iste dolore optio aliquam sint modi adipisci quaerat, exercitationem sapiente et, reiciendis, similique illo perspiciatis?
+                </div>
+            </li>
+
+            <!-- Terceiro -->
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">cloud</i>Terceiro
+                </div>
+
+                <div class="collapsible-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam dolore magnam sunt saepe. Expedita iste dolore optio aliquam sint modi adipisci quaerat, exercitationem sapiente et, reiciendis, similique illo perspiciatis?
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sobre o DROPDOWN -->
+    <!-- Ela é outra opção de menu, assim como collapsible -->
+    <div class="container">
+
+        <!-- Botão que, ao clicar, irá aparecer o menu -->
+        <!-- Precisa do data-target para indicar a lista ul (que irá selecionar) -->
+        <button class="dropdown btn" data-target="d1">abrir</button>
+
+        <!-- Items em lista que aparecerão ao clicar no botão -->
+        <ul class="dropdown-content" id="d1">
+            <li><a href="#">menu 1</a></li>
+            <li><a href="#">menu 2</a></li>
+            <li><a href="#">menu 3</a></li>
+            <li><a href="#">menu 4</a></li>
+        </ul>
+    </div>
+
+    <!-- Sobre o MATERIALBOXED -->
+    <!-- Irá maximizar a imagem ao clicá-la -->
+    <div class="container">
+
+        <!-- O atributo "data-caption" serve para colocar uma legenda / descrição da imagem ao maximizá-la -->
+        <img src="img/lana ihara - profile picture.png" data-caption="Sou eu! :D" alt="" width="100" class="materialboxed">
+    </div>
+
+    <!-- Sobre o SLIDER -->
+    <!-- Utilizado bastante para página principal -->
+
+    <!-- Como se fosse slides, irá mostrar uma bolinha para cada item -->
+    <!-- Caso o usuário quiser ver outro slide, ele clica na bolinha -->
+    <div class="container">
+        <div class="slider">
+            <ul class="slides">
+
+                <!-- Primeiro -->
+                <li>
+                    <img src="img/lana ihara - profile picture.png" alt="">
+                    <div class="caption center-align">
+                        <h3>título</h3>
+                        <p>detalhes</p>
+                    </div>
+                </li>
+
+                <!-- Segundo -->
+                <li>
+                    <img src="img/experiencia-trabalho.jpg" alt="">
+                    <div class="caption center-align">
+                        <h3>título 2</h3>
+                        <p>detalhes 2</p>
+                    </div>
+                </li>
+
+                <!-- Terceiro -->
+                <li>
+                    <img src="img/lana ihara - profile picture.png" alt="">
+                    <div class="caption center-align">
+                        <h3>título 3</h3>
+                        <p>detalhes 3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sobre o MODAL -->
+    <!-- Como se fosse um pop-up, mostra uma mensagem na tela (como aviso) -->
+    <div class="container">
+
+        <!-- Ao clicar, mostrará o pop-up do modal -->
+        <!-- Precisa ser um "a" para indicar o conteúdo que será mostrado como pop-up -->
+        <a href="#m1" class="btn modal-trigger">abrir</a>
+
+        <!-- Conteúdo que será mostrado como aviso / pop-up -->
+        <div class="modal" id="m1">
+            <div class="modal-content">
+                <h4>título</h4>
+                <p>detalhes</p>
+            </div>
+
+            <!-- Não é obrigatório -->
+            <!-- Porém, serve para "fechar" a tela pop-up de aviso -->
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn btn-flat">Ok</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre PARALLAX -->
+    <!-- Ao dar scroll, irá dar um efeito de "descer" a imagem (lembra do site do Eve) -->
+    <!-- Primeiro -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/experiencia-trabalho.jpg" alt="">
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2>título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam, quasi unde amet expedita sunt soluta voluptatum eos beatae veritatis animi fugit cupiditate, consectetur ab! Quae libero minus repudiandae molestias.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segundo -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/experiencia-trabalho.jpg" alt="">
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2>título 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quibusdam, quasi unde amet expedita sunt soluta voluptatum eos beatae veritatis animi fugit cupiditate, consectetur ab! Quae libero minus repudiandae molestias.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre PUSHPIN -->
+    
+    <!-- AZUL -->
+    <div id="blue" class="block blue">
+
+        <!-- Somente o primeiro é pinned, o restante é pin-top -->
+        <nav class="pushpin-demo-nav pinned" data-target="blue" style="top: 0px">
+            <div class="nav-wrapper light-blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Blue</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">link1</a></li>
+                        <li><a href="#">link2</a></li>
+                        <li><a href="#">link3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- VERMELHO -->
+    <!-- Se der um ctrl + d, irá selecionar os demais pra frente (e editar todos - classes, por exemplo) -->
+    <div id="red" class="block red">
+        <nav class="pushpin-demo-nav pin-top" data-target="red" style="top: 0px">
+            <div class="nav-wrapper light-red">
+                <div class="container">
+                    <a href="#" class="brand-logo">Blue</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">link1</a></li>
+                        <li><a href="#">link2</a></li>
+                        <li><a href="#">link3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- VERDE -->
+    <div id="green" class="block green">
+        <nav class="pushpin-demo-nav pin-top" data-target="green" style="top: 0px">
+            <div class="nav-wrapper light-green">
+                <div class="container">
+                    <a href="#" class="brand-logo">Blue</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">link1</a></li>
+                        <li><a href="#">link2</a></li>
+                        <li><a href="#">link3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Script para que funcione os seguintes componentes abaixo -->
+    <script>
+
+        // COLLAPSIBLE
+        $(function () {
+            $('.collapsible').collapsible();
+        });
+
+        // DROPDOWN
+        $(function () {
+            $('.dropdown').dropdown();
+        });
+
+        // MATERIALBOXED
+        $(function () {
+
+            // Função é .materialbox();
+            $('.materialboxed').materialbox();
+        });
+
+        // SLIDER
+        $(function () {
+
+            // Chama todos os itens da classe 'slider' e coloca o método .slider()
+            $('.slider').slider();
+        });
+
+        // MODAL
+        $(function () {
+            $('.modal').modal();
+        });
+
+        // PARALLAX
+        $(function () {
+            $('.parallax').parallax();
+        });
+
+        // PUSHPIN
+        $(function () {
+            $
+        });
+    </script>
+</body>
+</html>
