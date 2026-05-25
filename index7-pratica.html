@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <!-- Parei no minuto 23:00 -->
 
     <!-- Utilizando COLLAPSIBLE -->
     <!-- O "Collapsible" é equivalente ao "Accordion" do Bootstrap -->
@@ -193,6 +192,47 @@
     <!-- Estará no outro arquivo chamado index7-pratica-pushpin -->
     <!-- Se der um ctrl + d, irá selecionar os demais pra frente (e editar todos - classes, por exemplo) -->
 
+    <!-- Scrollspy (serve para fazer um menu de canto que irá "seguir" o tópico que você está - tipo do Notion) -->
+    <div class="row">
+        <div class="col l10">
+
+            <!-- Primeiro -->
+            <div class="section scrollspy" id="p1">
+                <h1>parte 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim porro at voluptatem iusto quisquam inventore libero, ex eligendi, autem quasi minima laboriosam deleniti tempora praesentium qui. Facilis, fuga porro?</p>
+            </div>
+
+            <!-- Segundo -->
+            <div class="section scrollspy" id="p2">
+                <h1>parte 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim porro at voluptatem iusto quisquam inventore libero, ex eligendi, autem quasi minima laboriosam deleniti tempora praesentium qui. Facilis, fuga porro?</p>
+            </div>
+
+            <!-- Terceiro -->
+            <div class="section scrollspy" id="p3">
+                <h1>parte 3</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facere explicabo ab vel qui illum et error voluptates incidunt. Sunt doloremque vero fuga fugit corporis recusandae sed impedit rerum ex?
+                Aliquam aperiam non minus tempore ipsa temporibus esse vero quam odio exercitationem, ea excepturi molestiae, ducimus quae odit hic totam blanditiis natus, eligendi debitis? Minima quis aperiam laboriosam fugiat voluptatibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vero quos quidem eaque provident laborum hic fuga non voluptatem, ut obcaecati eligendi sed tempora quae neque porro debitis repudiandae? Rem?
+            Repellat, natus cupiditate ab laudantium voluptatibus omnis, nihil cum modi asperiores eaque inventore ut optio eum quibusdam. Dolores, exercitationem suscipit? Optio quae quos sint in quibusdam quia magni, aut consequatur?
+            Vitae repudiandae consequuntur mollitia eum, voluptatibus nisi dolorem recusandae totam inventore voluptatem! Nobis, quo enim molestiae corporis unde a reiciendis laboriosam accusamus inventore aut odio, architecto nisi molestias facilis dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ex soluta nihil itaque recusandae modi ducimus, ipsum expedita praesentium neque? Aspernatur distinctio incidunt deleniti at ea ullam beatae doloremque tempore.
+        Dolores officiis sint quibusdam voluptas doloremque molestias eligendi unde. Enim sapiente assumenda illo itaque, deleniti quibusdam qui? Aliquid, nihil iusto nam enim incidunt nisi deleniti vero architecto itaque. Ab, perferendis!
+        Inventore facilis delectus nobis laboriosam rerum hic cum mollitia placeat eum harum quod, ratione, dolorem incidunt eos laborum ullam, numquam deserunt quis voluptates! Soluta iure consequatur nisi tempore id aliquid.
+        Voluptatum perspiciatis, magni, quae velit ab labore tempora adipisci dolorem, a neque eligendi distinctio! Aspernatur omnis odit cumque placeat rerum blanditiis illum nulla, ab repellat quasi unde nostrum repellendus dolore.
+        Neque alias id nobis repellat molestias ipsum minus iste, pariatur eum eligendi! Eligendi aperiam provident dolores fugiat. Quia maiores, delectus necessitatibus, iste autem officia repudiandae qui, officiis tempore magni ducimus?</p>
+            </div>
+        </div>
+        <div class="col l2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, cumque reiciendis. Temporibus odit voluptatum qui ex placeat et accusantium eligendi, quod, reprehenderit fugit commodi rerum officia eius in labore vero.</p>
+            <ul class="section table-of-contents hide-on-small-only">
+                <li><a href="#p1">parte 1</a></li>
+                <li><a href="#p2">parte 2</a></li>
+                <li><a href="#p3">parte 3</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Script para que funcione os seguintes componentes abaixo -->
     <script>
 
@@ -228,6 +268,11 @@
         // PARALLAX
         $(function () {
             $('.parallax').parallax();
+        });
+
+        // SCROLLSPY
+        $(function() {
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
